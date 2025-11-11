@@ -1,0 +1,355 @@
+0 verbose cli /Users/ai/Library/Application Support/Herd/config/nvm/versions/node/v22.15.0/bin/node /Users/ai/Library/Application Support/Herd/config/nvm/versions/node/v22.15.0/bin/npm
+1 info using npm@10.9.2
+2 info using node@v22.15.0
+3 silly config load:file:/Users/ai/Library/Application Support/Herd/config/nvm/versions/node/v22.15.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/ai/code/purecotz-tracking/.npmrc
+5 silly config load:file:/Users/ai/.npmrc
+6 silly config load:file:/Users/ai/Library/Application Support/Herd/config/nvm/versions/node/v22.15.0/etc/npmrc
+7 verbose title npm create vite@latest . --template react-ts
+8 verbose argv "create" "vite@latest" "." "--" "--template" "react-ts"
+9 verbose logfile logs-max:10 dir:/Users/ai/code/purecotz-tracking/.npm-cache/_logs/2025-11-10T12_04_18_306Z-
+10 verbose logfile /Users/ai/code/purecotz-tracking/.npm-cache/_logs/2025-11-10T12_04_18_306Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 http fetch GET 200 https://registry.npmjs.org/create-vite 299ms (cache updated)
+14 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+15 silly idealTree buildDeps
+16 silly fetch manifest create-vite@8.0.3
+17 silly packumentCache full:https://registry.npmjs.org/create-vite cache-miss
+18 http fetch GET 200 https://registry.npmjs.org/create-vite 70ms (cache updated)
+19 silly packumentCache full:https://registry.npmjs.org/create-vite set size:undefined disposed:false
+20 silly placeDep ROOT create-vite@8.0.3 REPLACE for:  want: 8.0.3
+21 silly reify mark retired [
+21 silly reify   '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite',
+21 silly reify   '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/.bin/create-vite',
+21 silly reify   '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/.bin/cva'
+21 silly reify ]
+22 silly reify moves {
+22 silly reify   '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite': '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/.create-vite-hvDzN0Ru',
+22 silly reify   '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/.bin/create-vite': '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/.bin/.create-vite-LJJdxEwS',
+22 silly reify   '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/.bin/cva': '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/.bin/.cva-EP2xyh39'
+22 silly reify }
+23 silly audit bulk request { 'create-vite': [ '8.0.3' ] }
+24 http cache create-vite@https://registry.npmjs.org/create-vite/-/create-vite-8.0.3.tgz 0ms (cache hit)
+25 silly tarball no local data for create-vite@https://registry.npmjs.org/create-vite/-/create-vite-8.0.3.tgz. Extracting by manifest.
+26 warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-svelte-ts/.vscode'
+27 silly tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-svelte-ts/.vscode' [Error: ENOENT: no such file or directory, lstat '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-svelte-ts/.vscode'] {
+27 silly tar   errno: -2,
+27 silly tar   code: 'ENOENT',
+27 silly tar   syscall: 'lstat',
+27 silly tar   path: '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-svelte-ts/.vscode',
+27 silly tar   entry: ReadEntry {
+27 silly tar     _events: [Object: null prototype] { end: [Function (anonymous)] },
+27 silly tar     _eventsCount: 1,
+27 silly tar     _maxListeners: undefined,
+27 silly tar     writable: false,
+27 silly tar     readable: true,
+27 silly tar     extended: null,
+27 silly tar     globalExtended: null,
+27 silly tar     header: Header {
+27 silly tar       cksumValid: true,
+27 silly tar       needPax: false,
+27 silly tar       nullBlock: false,
+27 silly tar       block: null,
+27 silly tar       path: 'package/template-svelte-ts/.vscode/extensions.json',
+27 silly tar       mode: 420,
+27 silly tar       uid: 0,
+27 silly tar       gid: 0,
+27 silly tar       size: 50,
+27 silly tar       mtime: 1985-10-26T08:15:00.000Z,
+27 silly tar       cksum: 8712,
+27 silly tar       linkpath: '',
+27 silly tar       uname: '',
+27 silly tar       gname: '',
+27 silly tar       devmaj: 0,
+27 silly tar       devmin: 0,
+27 silly tar       atime: null,
+27 silly tar       ctime: null,
+27 silly tar       [Symbol(type)]: '0'
+27 silly tar     },
+27 silly tar     startBlockSize: 512,
+27 silly tar     blockRemain: 0,
+27 silly tar     remain: 0,
+27 silly tar     type: 'File',
+27 silly tar     meta: false,
+27 silly tar     ignore: false,
+27 silly tar     path: 'template-svelte-ts/.vscode/extensions.json',
+27 silly tar     mode: 438,
+27 silly tar     uid: 0,
+27 silly tar     gid: 0,
+27 silly tar     uname: '',
+27 silly tar     gname: '',
+27 silly tar     size: 50,
+27 silly tar     mtime: 1985-10-26T08:15:00.000Z,
+27 silly tar     atime: null,
+27 silly tar     ctime: null,
+27 silly tar     linkpath: '',
+27 silly tar     absolute: '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-svelte-ts/.vscode/extensions.json',
+27 silly tar     [Symbol(shapeMode)]: false,
+27 silly tar     [Symbol(kCapture)]: false,
+27 silly tar     [Symbol(flowing)]: false,
+27 silly tar     [Symbol(paused)]: true,
+27 silly tar     [Symbol(pipes)]: [],
+27 silly tar     [Symbol(buffer)]: [
+27 silly tar       <Buffer 7b 0a 20 20 22 72 65 63 6f 6d 6d 65 6e 64 61 74 69 6f 6e 73 22 3a 20 5b 22 73 76 65 6c 74 65 2e 73 76 65 6c 74 65 2d 76 73 63 6f 64 65 22 5d 0a 7d 0a>
+27 silly tar     ],
+27 silly tar     [Symbol(objectMode)]: false,
+27 silly tar     [Symbol(encoding)]: null,
+27 silly tar     [Symbol(async)]: false,
+27 silly tar     [Symbol(decoder)]: null,
+27 silly tar     [Symbol(EOF)]: true,
+27 silly tar     [Symbol(emittedEnd)]: false,
+27 silly tar     [Symbol(emittingEnd)]: false,
+27 silly tar     [Symbol(closed)]: false,
+27 silly tar     [Symbol(emittedError)]: null,
+27 silly tar     [Symbol(bufferLength)]: 50,
+27 silly tar     [Symbol(destroyed)]: false,
+27 silly tar     [Symbol(signal)]: undefined,
+27 silly tar     [Symbol(aborted)]: false
+27 silly tar   },
+27 silly tar   cwd: '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite',
+27 silly tar   tarCode: 'TAR_ENTRY_ERROR'
+27 silly tar }
+28 warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-svelte/.vscode'
+29 silly tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-svelte/.vscode' [Error: ENOENT: no such file or directory, lstat '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-svelte/.vscode'] {
+29 silly tar   errno: -2,
+29 silly tar   code: 'ENOENT',
+29 silly tar   syscall: 'lstat',
+29 silly tar   path: '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-svelte/.vscode',
+29 silly tar   entry: ReadEntry {
+29 silly tar     _events: [Object: null prototype] { end: [Function (anonymous)] },
+29 silly tar     _eventsCount: 1,
+29 silly tar     _maxListeners: undefined,
+29 silly tar     writable: false,
+29 silly tar     readable: true,
+29 silly tar     extended: null,
+29 silly tar     globalExtended: null,
+29 silly tar     header: Header {
+29 silly tar       cksumValid: true,
+29 silly tar       needPax: false,
+29 silly tar       nullBlock: false,
+29 silly tar       block: null,
+29 silly tar       path: 'package/template-svelte/.vscode/extensions.json',
+29 silly tar       mode: 420,
+29 silly tar       uid: 0,
+29 silly tar       gid: 0,
+29 silly tar       size: 50,
+29 silly tar       mtime: 1985-10-26T08:15:00.000Z,
+29 silly tar       cksum: 8436,
+29 silly tar       linkpath: '',
+29 silly tar       uname: '',
+29 silly tar       gname: '',
+29 silly tar       devmaj: 0,
+29 silly tar       devmin: 0,
+29 silly tar       atime: null,
+29 silly tar       ctime: null,
+29 silly tar       [Symbol(type)]: '0'
+29 silly tar     },
+29 silly tar     startBlockSize: 512,
+29 silly tar     blockRemain: 0,
+29 silly tar     remain: 0,
+29 silly tar     type: 'File',
+29 silly tar     meta: false,
+29 silly tar     ignore: false,
+29 silly tar     path: 'template-svelte/.vscode/extensions.json',
+29 silly tar     mode: 438,
+29 silly tar     uid: 0,
+29 silly tar     gid: 0,
+29 silly tar     uname: '',
+29 silly tar     gname: '',
+29 silly tar     size: 50,
+29 silly tar     mtime: 1985-10-26T08:15:00.000Z,
+29 silly tar     atime: null,
+29 silly tar     ctime: null,
+29 silly tar     linkpath: '',
+29 silly tar     absolute: '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-svelte/.vscode/extensions.json',
+29 silly tar     [Symbol(shapeMode)]: false,
+29 silly tar     [Symbol(kCapture)]: false,
+29 silly tar     [Symbol(flowing)]: false,
+29 silly tar     [Symbol(paused)]: true,
+29 silly tar     [Symbol(pipes)]: [],
+29 silly tar     [Symbol(buffer)]: [
+29 silly tar       <Buffer 7b 0a 20 20 22 72 65 63 6f 6d 6d 65 6e 64 61 74 69 6f 6e 73 22 3a 20 5b 22 73 76 65 6c 74 65 2e 73 76 65 6c 74 65 2d 76 73 63 6f 64 65 22 5d 0a 7d 0a>
+29 silly tar     ],
+29 silly tar     [Symbol(objectMode)]: false,
+29 silly tar     [Symbol(encoding)]: null,
+29 silly tar     [Symbol(async)]: false,
+29 silly tar     [Symbol(decoder)]: null,
+29 silly tar     [Symbol(EOF)]: true,
+29 silly tar     [Symbol(emittedEnd)]: false,
+29 silly tar     [Symbol(emittingEnd)]: false,
+29 silly tar     [Symbol(closed)]: false,
+29 silly tar     [Symbol(emittedError)]: null,
+29 silly tar     [Symbol(bufferLength)]: 50,
+29 silly tar     [Symbol(destroyed)]: false,
+29 silly tar     [Symbol(signal)]: undefined,
+29 silly tar     [Symbol(aborted)]: false
+29 silly tar   },
+29 silly tar   cwd: '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite',
+29 silly tar   tarCode: 'TAR_ENTRY_ERROR'
+29 silly tar }
+30 warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-vue-ts/.vscode'
+31 silly tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-vue-ts/.vscode' [Error: ENOENT: no such file or directory, lstat '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-vue-ts/.vscode'] {
+31 silly tar   errno: -2,
+31 silly tar   code: 'ENOENT',
+31 silly tar   syscall: 'lstat',
+31 silly tar   path: '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-vue-ts/.vscode',
+31 silly tar   entry: ReadEntry {
+31 silly tar     _events: [Object: null prototype] { end: [Function (anonymous)] },
+31 silly tar     _eventsCount: 1,
+31 silly tar     _maxListeners: undefined,
+31 silly tar     writable: false,
+31 silly tar     readable: true,
+31 silly tar     extended: null,
+31 silly tar     globalExtended: null,
+31 silly tar     header: Header {
+31 silly tar       cksumValid: true,
+31 silly tar       needPax: false,
+31 silly tar       nullBlock: false,
+31 silly tar       block: null,
+31 silly tar       path: 'package/template-vue-ts/.vscode/extensions.json',
+31 silly tar       mode: 420,
+31 silly tar       uid: 0,
+31 silly tar       gid: 0,
+31 silly tar       size: 39,
+31 silly tar       mtime: 1985-10-26T08:15:00.000Z,
+31 silly tar       cksum: 8392,
+31 silly tar       linkpath: '',
+31 silly tar       uname: '',
+31 silly tar       gname: '',
+31 silly tar       devmaj: 0,
+31 silly tar       devmin: 0,
+31 silly tar       atime: null,
+31 silly tar       ctime: null,
+31 silly tar       [Symbol(type)]: '0'
+31 silly tar     },
+31 silly tar     startBlockSize: 512,
+31 silly tar     blockRemain: 0,
+31 silly tar     remain: 0,
+31 silly tar     type: 'File',
+31 silly tar     meta: false,
+31 silly tar     ignore: false,
+31 silly tar     path: 'template-vue-ts/.vscode/extensions.json',
+31 silly tar     mode: 438,
+31 silly tar     uid: 0,
+31 silly tar     gid: 0,
+31 silly tar     uname: '',
+31 silly tar     gname: '',
+31 silly tar     size: 39,
+31 silly tar     mtime: 1985-10-26T08:15:00.000Z,
+31 silly tar     atime: null,
+31 silly tar     ctime: null,
+31 silly tar     linkpath: '',
+31 silly tar     absolute: '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-vue-ts/.vscode/extensions.json',
+31 silly tar     [Symbol(shapeMode)]: false,
+31 silly tar     [Symbol(kCapture)]: false,
+31 silly tar     [Symbol(flowing)]: false,
+31 silly tar     [Symbol(paused)]: true,
+31 silly tar     [Symbol(pipes)]: [],
+31 silly tar     [Symbol(buffer)]: [
+31 silly tar       <Buffer 7b 0a 20 20 22 72 65 63 6f 6d 6d 65 6e 64 61 74 69 6f 6e 73 22 3a 20 5b 22 56 75 65 2e 76 6f 6c 61 72 22 5d 0a 7d 0a>
+31 silly tar     ],
+31 silly tar     [Symbol(objectMode)]: false,
+31 silly tar     [Symbol(encoding)]: null,
+31 silly tar     [Symbol(async)]: false,
+31 silly tar     [Symbol(decoder)]: null,
+31 silly tar     [Symbol(EOF)]: true,
+31 silly tar     [Symbol(emittedEnd)]: false,
+31 silly tar     [Symbol(emittingEnd)]: false,
+31 silly tar     [Symbol(closed)]: false,
+31 silly tar     [Symbol(emittedError)]: null,
+31 silly tar     [Symbol(bufferLength)]: 39,
+31 silly tar     [Symbol(destroyed)]: false,
+31 silly tar     [Symbol(signal)]: undefined,
+31 silly tar     [Symbol(aborted)]: false
+31 silly tar   },
+31 silly tar   cwd: '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite',
+31 silly tar   tarCode: 'TAR_ENTRY_ERROR'
+31 silly tar }
+32 warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-vue/.vscode'
+33 silly tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-vue/.vscode' [Error: ENOENT: no such file or directory, lstat '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-vue/.vscode'] {
+33 silly tar   errno: -2,
+33 silly tar   code: 'ENOENT',
+33 silly tar   syscall: 'lstat',
+33 silly tar   path: '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-vue/.vscode',
+33 silly tar   entry: ReadEntry {
+33 silly tar     _events: [Object: null prototype] { end: [Function (anonymous)] },
+33 silly tar     _eventsCount: 1,
+33 silly tar     _maxListeners: undefined,
+33 silly tar     writable: false,
+33 silly tar     readable: true,
+33 silly tar     extended: null,
+33 silly tar     globalExtended: null,
+33 silly tar     header: Header {
+33 silly tar       cksumValid: true,
+33 silly tar       needPax: false,
+33 silly tar       nullBlock: false,
+33 silly tar       block: null,
+33 silly tar       path: 'package/template-vue/.vscode/extensions.json',
+33 silly tar       mode: 420,
+33 silly tar       uid: 0,
+33 silly tar       gid: 0,
+33 silly tar       size: 39,
+33 silly tar       mtime: 1985-10-26T08:15:00.000Z,
+33 silly tar       cksum: 8116,
+33 silly tar       linkpath: '',
+33 silly tar       uname: '',
+33 silly tar       gname: '',
+33 silly tar       devmaj: 0,
+33 silly tar       devmin: 0,
+33 silly tar       atime: null,
+33 silly tar       ctime: null,
+33 silly tar       [Symbol(type)]: '0'
+33 silly tar     },
+33 silly tar     startBlockSize: 512,
+33 silly tar     blockRemain: 0,
+33 silly tar     remain: 0,
+33 silly tar     type: 'File',
+33 silly tar     meta: false,
+33 silly tar     ignore: false,
+33 silly tar     path: 'template-vue/.vscode/extensions.json',
+33 silly tar     mode: 438,
+33 silly tar     uid: 0,
+33 silly tar     gid: 0,
+33 silly tar     uname: '',
+33 silly tar     gname: '',
+33 silly tar     size: 39,
+33 silly tar     mtime: 1985-10-26T08:15:00.000Z,
+33 silly tar     atime: null,
+33 silly tar     ctime: null,
+33 silly tar     linkpath: '',
+33 silly tar     absolute: '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite/template-vue/.vscode/extensions.json',
+33 silly tar     [Symbol(shapeMode)]: false,
+33 silly tar     [Symbol(kCapture)]: false,
+33 silly tar     [Symbol(flowing)]: false,
+33 silly tar     [Symbol(paused)]: true,
+33 silly tar     [Symbol(pipes)]: [],
+33 silly tar     [Symbol(buffer)]: [
+33 silly tar       <Buffer 7b 0a 20 20 22 72 65 63 6f 6d 6d 65 6e 64 61 74 69 6f 6e 73 22 3a 20 5b 22 56 75 65 2e 76 6f 6c 61 72 22 5d 0a 7d 0a>
+33 silly tar     ],
+33 silly tar     [Symbol(objectMode)]: false,
+33 silly tar     [Symbol(encoding)]: null,
+33 silly tar     [Symbol(async)]: false,
+33 silly tar     [Symbol(decoder)]: null,
+33 silly tar     [Symbol(EOF)]: true,
+33 silly tar     [Symbol(emittedEnd)]: false,
+33 silly tar     [Symbol(emittingEnd)]: false,
+33 silly tar     [Symbol(closed)]: false,
+33 silly tar     [Symbol(emittedError)]: null,
+33 silly tar     [Symbol(bufferLength)]: 39,
+33 silly tar     [Symbol(destroyed)]: false,
+33 silly tar     [Symbol(signal)]: undefined,
+33 silly tar     [Symbol(aborted)]: false
+33 silly tar   },
+33 silly tar   cwd: '/Users/ai/code/purecotz-tracking/.npm-cache/_npx/1415fee72ff6294b/node_modules/create-vite',
+33 silly tar   tarCode: 'TAR_ENTRY_ERROR'
+33 silly tar }
+34 http fetch GET 200 https://registry.npmjs.org/create-vite/-/create-vite-8.0.3.tgz 182ms (cache miss)
+35 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 332ms
+36 silly audit report {}
+37 verbose cwd /Users/ai/code/purecotz-tracking
+38 verbose os Darwin 24.5.0
+39 verbose node v22.15.0
+40 verbose npm  v10.9.2
+41 verbose exit 0
+42 info ok
