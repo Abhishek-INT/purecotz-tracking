@@ -1,7 +1,9 @@
 import { useMemo, useState } from 'react';
-import { Calendar, ChevronDown, ChevronUp, Package, Pencil, User as UserIcon } from 'lucide-react';
+import { Calendar, ChevronDown, ChevronUp, Package, Pencil, Printer, User as UserIcon } from 'lucide-react';
 import type { Order, Client, Stage, OrderStage, Batch } from '../types';
 import { users } from '../data/masterData';
+import SheetPreview from './SheetPreview';
+import StageTimeline from './StageTimeline';
 
 const canEditOrder = (order: Order): boolean => {
   return order.batches.every((batch) => Object.keys(batch.progress).length === 0);
@@ -97,12 +99,14 @@ const BatchCard = ({ batch, orderStages, stages }: { batch: Batch; orderStages: 
           <p className="mt-1 text-sm font-medium text-slate-800">{formatDate(batch.expectedCompletionDate)}</p>
         </div>
       </div>
+      <StageTimeline batch={batch} orderStages={orderStages} masterStages={stages} />
     </div>
   );
 };
 
 const OrderCard = ({ order, clients, stages, onEdit }: OrderCardProps) => {
   const [expanded, setExpanded] = useState<boolean>(false);
+  const [showSheetPreview, setShowSheetPreview] = useState(false);
   const clientName = useMemo(() => findClientName(order.clientId, clients), [order.clientId, clients]);
   const orderManager = useMemo(() => users.find((u) => u.id === order.createdBy), [order.createdBy]);
   const orderStatus: Batch['status'] = useMemo(() => {
@@ -133,6 +137,13 @@ const OrderCard = ({ order, clients, stages, onEdit }: OrderCardProps) => {
                 Edit
               </button>
             )}
+            <button
+              onClick={() => setShowSheetPreview(true)}
+              className="inline-flex items-center gap-2 rounded border border-slate-300 bg-white px-2 py-1 text-xs font-medium text-slate-600 transition-colors hover:bg-slate-50"
+            >
+              <Printer className="h-4 w-4" />
+              Print Sheets
+            </button>
           </div>
           <p className="text-sm text-slate-600">{order.briefDescription}</p>
           <div className="mt-2 flex flex-wrap items-center gap-3 text-sm text-slate-500">
@@ -173,6 +184,10 @@ const OrderCard = ({ order, clients, stages, onEdit }: OrderCardProps) => {
             <BatchCard key={batch.id} batch={batch} orderStages={order.stages} stages={stages} />
           ))}
         </div>
+      )}
+
+      {showSheetPreview && (
+        <SheetPreview order={order} onClose={() => setShowSheetPreview(false)} />
       )}
     </article>
   );
